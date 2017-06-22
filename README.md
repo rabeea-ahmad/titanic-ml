@@ -23,15 +23,15 @@ As we can see, Parch (Parents and Children) and FamilySize are highly correlated
 
 Here are some of the other visuals I created, god bless @seaborn 
 
-** Age **
+**Age**
 ![Age](./graphs/Age1.png)
 ![Age](./graphs/Age2.png)  
 
-** Fare **
+**Fare**
 ![Fare](./graphs/Fare1.png)
 ![Fare](./graphs/Fare2.png)
 
-** Family Size ** 
+**Family Size** 
 ![Family Size](./graphs/FamilySize1.png)
 ![Family Size](./graphs/FamilySize2.png)
 
