@@ -17,6 +17,24 @@ This heatmap shows the correalation between features:
 
 ![Pearson Correalation of Features](./graphs/postcleaning-hm.png)
 
+As we can see, Parch (Parents and Children) and FamilySize are highly correlated, Cabin and Fare are also somewhat correlated. And from our knowledge about these factors, we can confirm that it makes sense that they are dependent.
+
+### Data + Graphs 
+
+Here are some of the other visuals I created, god bless @seaborn 
+
+** Age **
+![Age](./graphs/Age1.png)
+![Age](./graphs/Age2.png)  
+
+** Fare **
+![Fare](./graphs/Fare1.png)
+![Fare](./graphs/Fare2.png)
+
+** Family Size ** 
+![Family Size](./graphs/FamilySize1.png)
+![Family Size](./graphs/FamilySize2.png)
+
 ### Models
 
 Choosing a machine learning model in order to analyze your data is also a crucial step in the process. We will look into 5 different models and see how their results differ depending on the data we feed, and also see which features each values the most. The 5 different kinds are:
@@ -31,6 +49,8 @@ Choosing a machine learning model in order to analyze your data is also a crucia
 
 	5. Gaussian Naive Bayes: Based on Bayes' Theorum with an assumption on independence amoung predictors. So although passenger class, age and sex may be related in one's survival, this model considers them independant of each other. https://www.analyticsvidhya.com/blog/2015/09/naive-bayes-explained/
 ```
+
+Based on my analysis, I found that Random Forest Classifier worked the best for the features I created with the given data, giving an accuracy of roughly 90.1% 
 
 ### Installing
 
