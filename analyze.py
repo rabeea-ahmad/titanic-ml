@@ -138,12 +138,12 @@ class Titanic:
 		facet.map(sns.kdeplot, feature, shade=True)
 		facet.set(xlim=(0, train[feature].max()))
 		facet.add_legend()
-		facet.savefig(feature + '1.png')
+		facet.savefig('./graphs/' + feature + '1.png')
 
 		fig, axis1 = plt.subplots(1, 1, figsize=(38, 10))
 		avg = train[[feature, 'Survived']].groupby([feature], as_index=False).mean()
 		sns.barplot(x=feature, y='Survived', data=avg)
-		fig.savefig(feature + '2.png')
+		fig.savefig('./graphs' + feature + '2.png')
 
 	def heatmap(self, train, name):
 		colourmap = plt.cm.viridis
@@ -226,7 +226,7 @@ if __name__ == '__main__':
     train, test = titanic_ml.mapping([train_pcs, test_pcs])
 
     # Visualize the pre and post cleaning data
-    titanic_ml.heatmap(train, 'postcleaning-hm.png')
+    titanic_ml.heatmap(train, './graphs/postcleaning-hm.png')
 
     # Define training and testing set
     x_train = train.drop('Survived', axis=1)
